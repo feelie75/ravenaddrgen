@@ -9,8 +9,10 @@ error_reporting(E_ALL);
 // Depending on your host or where you are running the code, this path will vary.
 ini_set("include_path", '/home/andrew/php:' . ini_get("include_path") );
 
-
+// http://pear.php.net/package/Math_BigInteger
 include('Math/BigInteger.php');
+
+// https://github.com/BitcoinPHP/BitcoinECDSA.php
 use BitcoinPHP\BitcoinECDSA\BitcoinECDSA;
 // Path to wherever your BitcoinECDSA stuff got installed.
 require_once("public_html/ravenfaucet/vendor/bitcoin-php/bitcoin-ecdsa/src/BitcoinPHP/BitcoinECDSA/BitcoinECDSA.php");
