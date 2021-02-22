@@ -14,7 +14,7 @@ include('Math/BigInteger.php');
 
 require_once("./ravencoinlib.php");
 
-$loops = $argv[1];
+$loops  = $argv[1];
 $amount = $argv[2];
 if ($loops == "") { $loops = 500; }
 if ($amount == "") { $amount = 1000; }
